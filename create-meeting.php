@@ -47,12 +47,8 @@ function create_meeting() {
         ]);
  
         $data = json_decode($response->getBody());
-        echo 'Start URL:'. $data->start_url;
-        echo "Join URL: ". $data->join_url;
-        echo "<br>";
-        echo "Meeting Password: ". $data->password;
-
-        Redirect($data->start_url);
+        echo '<h1>Start URL for expert (desktop):</h1>'. $data->start_url;
+        echo "<br /> <h1>Join URL for participant (desktop): </h1>". $data->join_url;
  
     } catch(Exception $e) {
         echo $e->getMessage();
