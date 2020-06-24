@@ -38,7 +38,7 @@ function create_meeting() {
                 "Authorization" => "Bearer $accessToken"
             ],
             'json' => [
-                "topic" => "Let's learn Laravel",
+                "topic" => "What's up zoom?",
                 "type" => 2,
                 "start_time" => "2020-05-05T20:30:00",
                 "duration" => "30", // 30 mins
