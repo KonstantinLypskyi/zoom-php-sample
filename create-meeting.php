@@ -47,8 +47,8 @@ function create_meeting() {
         ]);
  
         $data = json_decode($response->getBody());
-        echo '<h1>Start URL for expert:</h1>'. $data->start_url;
-        echo "<br /> <h1>Join URL for participant: </h1>". $data->join_url;
+        echo '<h1>Start URL for expert (desktop or web):</h1>'. $data->start_url;
+        echo "<br /> <h1>Join URL for participant (desktop or web): </h1>". $data->join_url;
         echo '<br /> <h1>Join URL for participant (web only): </h1>'. str_replace('/j/', '/wc/join/', $data->join_url);
  
     } catch(Exception $e) {
